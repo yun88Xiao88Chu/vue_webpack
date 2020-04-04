@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script src="./event-bus.js"></script>
+  <script>
+      //绑定事件监听
+        EventBus.on('add',(data)=>{
+          console.log('add callback()',data)
+        })
+        EventBus.on('add',(data)=>{
+          console.log('add callback2()',data)
+        })
+        EventBus.on('delete',(data)=>{
+          console.log('add callback2()',data)
+        })
+  </script>
+</body>
+</html>
